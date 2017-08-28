@@ -1,13 +1,26 @@
+/* #BFD8D2 - powder
+#FEDCD2 - peach
+#DF744A - warm
+#DCB239 - lemon */
+
 h1 {
 font-family: 'Megrim', cursive;
 font-size: 80px;
 text-align: center;
+color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #BFD8D2;
 }
 
 .fa {
     font-size: 72px;
-    color: black;
-    padding: 15px; 
+    color: white;
+    padding: 15px;
     
 }
 
@@ -15,4 +28,11 @@ text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+    width: 300px;
+    margin: auto;
+}
+
+.fa:hover {
+    transform: scale(1.1);
 }
