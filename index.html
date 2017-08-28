@@ -5,13 +5,14 @@
         <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="assets/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     </head>
 
     <body>
-            <div class="background"></div>
+             <div class="background"></div> 
         <div class="panel header"> 
         <h1 class="animated 3s bounceInUp">Clare Hsu</h1>
-        <div class="links">
+        <div class="panel links">
             <a href=""><i class="fa fa-file-text" aria-hidden="true"></i>
             </a>
             <a href="https://github.com/clarehsu390/"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -19,13 +20,15 @@
             
         </div>
      </div>
+    <div class="panel fullstack">
+        <a href="https://youraesthetic.herokuapp.com/#/"><img src="https://i.gyazo.com/8064483d91d035a300ea543a1bcb3669.gif" alt="https://gyazo.com/8064483d91d035a300ea543a1bcb3669"/></a>
+    </div>
      <script>
-        $(function () {
-            let controller = new ScrollMagic.Controller({
+        let controller = new ScrollMagic.Controller({
                 globalSceneOptions: {
                     triggerHook: 'onLeave'
                 }
-            })
+            });
 
         let slides = document.querySelectorAll("div.panel");
 
@@ -36,7 +39,6 @@
             .setPin(slides[i])
             .addTo(controller);
         }
-        });
-        </script> 
+</script> 
     </body>
 </html>
