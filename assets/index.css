@@ -5,16 +5,33 @@
 
 h1 {
 font-family: 'Megrim', cursive;
-font-size: 80px;
+font-size:200px;
 text-align: center;
+vertical-align: center;
 color: white;
+z-index: 1;
+}
+
+body {
+    background-image: url('flowers.jpg');
+    background-size: cover;
+}
+
+.background {
+    background-color: black;
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #BFD8D2;
+    height: 100%;
+    width: 100%;
 }
 
 .fa {
@@ -28,9 +45,8 @@ color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    width: 300px;
     margin: auto;
+    z-index: 1;
 }
 
 .fa:hover {

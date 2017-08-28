@@ -8,8 +8,9 @@
     </head>
 
     <body>
-        <div class="header"> 
-        <h1>Clare Hsu</h1>
+            <div class="background"></div>
+        <div class="panel header"> 
+        <h1 class="animated 3s bounceInUp">Clare Hsu</h1>
         <div class="links">
             <a href=""><i class="fa fa-file-text" aria-hidden="true"></i>
             </a>
@@ -18,5 +19,24 @@
             
         </div>
      </div>
+     <script>
+        $(function () {
+            let controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: 'onLeave'
+                }
+            })
+
+        let slides = document.querySelectorAll("div.panel");
+
+        for (let i=0; i < slides.length; i++) {
+            new ScrollMagic.Scene({
+                triggerElement: slides[i]
+            })
+            .setPin(slides[i])
+            .addTo(controller);
+        }
+        });
+        </script> 
     </body>
 </html>
