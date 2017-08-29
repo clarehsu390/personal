@@ -5,9 +5,21 @@
 body {
     background-image: url('flowers.jpg');
     background-size: cover;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+      background-position: center center;
+}
+
+body::before {
+  display: block;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
 }
 h1 {
-font-family: 'Quicksand', sans-serif;
+font-family: 'Dancing Script', cursive;
 font-size:200px;
 text-align: center;
 vertical-align: center;
@@ -22,6 +34,11 @@ h2 {
     margin: 10px;
 
 }
+
+ .left h2 {
+    text-align: left;
+    width: 450px;
+} 
 
 h3 {
     font-family: 'Quicksand', sans-serif;
@@ -60,9 +77,9 @@ h4 {
 
  .background {
     background-color: black;
-    background-size: cover;
+    background-size: contain;
     opacity: 0.25;
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: -1
@@ -84,13 +101,11 @@ h4 {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background-image: url('flowers.jpg');
-    background-size: cover;
 }
 
 .fa {
     font-size: 72px;
-    color: #DCB239;
+    color: white;
     padding: 15px;
     
 }
@@ -147,7 +162,6 @@ img {
 }
 
 .fullstack-img:hover {
-    border-radius: 50%;
     opacity: 0.8;
 }
 
@@ -156,7 +170,6 @@ img {
 }
 
 .javascript-img:hover {
-    border-radius: 50%;
     opacity: 0.8;
 }
  .panel.javascript:hover .javascript-title{
@@ -175,7 +188,6 @@ img {
 }
 
 .flex-img:hover {
-    border-radius: 50%;
     opacity: 0.8;
 }
 
@@ -192,6 +204,7 @@ img {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    height: 70%;
 }
 
 .left {

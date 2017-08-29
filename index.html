@@ -1,6 +1,7 @@
 <html>
     <head>
    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -8,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     </head>
 
-    <body>
+    <body>   
         <div class="header">   
         <h1 class="animated 3s bounceInUp">Clare Hsu</h1>
         <div class="links">
@@ -18,11 +19,10 @@
             <a href="https://www.linkedin.com/in/clare-hsu-aa3866132/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             
         </div>
-     </div>
-     <div class="background"></div>  
+     </div> 
         <div class="gifs">
             <div class="panel fullstack">
-            <a href="https://youraesthetic.herokuapp.com/#/"><img class="fullstack-img"src="https://i.gyazo.com/8064483d91d035a300ea543a1bcb3669.gif" alt="https://gyazo.com/8064483d91d035a300ea543a1bcb3669"/></a>
+            <a href="#description fullstack"><img class="fullstack-img"src="https://i.gyazo.com/8064483d91d035a300ea543a1bcb3669.gif" alt="https://gyazo.com/8064483d91d035a300ea543a1bcb3669"/></a>
             <div class="fullstack-title">
             <h2>Your Aesthetic</h2>
             <h3>Fullstack Web Application</h3>
@@ -30,14 +30,14 @@
             </div>
             
             <div class="panel javascript">
-             <a href="https://clarehsu390.github.io/Frenzy/"><img class="javascript-img" src="https://i.gyazo.com/b10f61d1088cd7f8c7971d4b2b56d561.gif" alt="https://gyazo.com/b10f61d1088cd7f8c7971d4b2b56d561"/></a>
+             <a href="#description javascript"><img class="javascript-img" src="https://i.gyazo.com/b10f61d1088cd7f8c7971d4b2b56d561.gif" alt="https://gyazo.com/b10f61d1088cd7f8c7971d4b2b56d561"/></a>
              <div class="javascript-title">
                 <h2>Word Frenzy</h2>
                 <h3>Browser Game</h3>
              </div>
              </div>
             <div class="panel flex">
-             <a href="https://clustervisualization.herokuapp.com/"><img
+             <a href="#description flex"><img
                 class="flex-img"  src="https://i.gyazo.com/cdbf0a33960807edf800f9ffdf1399b0.gif" alt="https://gyazo.com/cdbf0a33960807edf800f9ffdf1399b0"/></a>
              <div class="flex-title">
                 <h2>Clustering Visualization</h2>
@@ -45,8 +45,7 @@
              </div>
              </div>
             </div>
-        <div class="background"></div>
-        <div class="description fullstack">
+        <div class="description fullstack"id="description fullstack">
             <div class="left">
             <h2>Your Aesthetic <a href="https://github.com/clarehsu390/YourAesthetic"><i class="fa fa-github" aria-hidden="true" id="github"></i></a></h2>
             <h4>
@@ -57,7 +56,7 @@
             <a href="https://youraesthetic.herokuapp.com/#/"><img src="assets/fullstack.png" alt=""></a>
             </div>
         </div>
-        <div class="description javascript">
+        <div class="description javascript"id="description javascript">
             <div class="left">
                 <h2>Word Frenzy <a href="https://github.com/clarehsu390/Frenzy"><i class="fa fa-github" aria-hidden="true" id="github"></i></a></h2>
 
@@ -71,31 +70,32 @@
             </div>
 
         </div>
-        <!-- <a href="https://github.com/clarehsu390/YourAesthetic"><i class="fa fa-github" aria-hidden="true" id="github"></i></a></h2> -->
-        <!-- <h3>Fullstack Web Application </h3>
-         <h4>
-           Your Aesthetic is a fullstack single-page web application inspired by Pinterest. Created using Ruby on Rails, React.js and Redux. Users can add pins to boards to save images.
-        </h4>  -->
-    <!-- <div class="panel javascript">
-        <div class="left">
-        <h2>Word Frenzy <a href="https://github.com/clarehsu390/Frenzy"><i class="fa fa-github" aria-hidden="true" id="github"></i></a></h2>
-        <h3>Browser Game</h3>
-        <h4>
-            Word Frenzy is a browser game, handling complicated mouse events. Created using vanilla Javascript and jQuery. Implemented dictionary lookup using Trie data structure.
-        </h4>
+
+        <div class="description flex"id="description flex">
+            <div class="left">
+                <h2>
+                    Clustering Visualization
+                    <a href="https://github.com/clarehsu390/Clustering-Visualization"><i class="fa fa-github" aria-hidden="true" id="github"></i></a> 
+                </h2>
+                <h4>
+                Clustering Visualization provides visual representation of K-means clustering, a simple algorithm used in machine learning. Created using D3.js and Django.
+                </h4>
+
+            </div>
+
+            <div class="right">
+                <a href="https://clustervisualization.herokuapp.com/">
+                    <img src="assets/flex.png" alt="">
+                </a>
+            </div>
         </div>
-    </div> -->
-    <!-- <div class="background"></div> 
-    <div class="panel flex">
-        <div class="left">
-        <h2>Clustering Visualization <a href="https://github.com/clarehsu390/Clustering-Visualization"><i class="fa fa-github" aria-hidden="true" id="github"></i></a> </h2>
-        <h3>Data Visualization</h3>
-        <h4>
-            Clustering Visualization provides visual representation of K-means clustering, a simple algorithm used in machine learning. Created using D3.js and Django.
-        </h4>
-        </div>
- 
- 
-    </div> -->
+       <script>
+           let controller = new ScrollMagic.Controller();
+           let scene = new ScrollMagic.Scene({
+               triggerElement: ".gifs"
+           })
+            .setClassToggle("animated bounceInUp")
+            .addTo(controller)
+        </script>
     </body>
 </html>
