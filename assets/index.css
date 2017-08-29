@@ -11,9 +11,18 @@ vertical-align: center;
 color: white;
 }
 
-body {
-    background-image: url('flowers.jpg');
-    background-size: cover;
+h2 {
+    font-family: 'Megrim', cursive;
+    color: white;
+    text-align: center;
+
+}
+
+h3 {
+    font-family: 'Megrim', cursive;
+    color: white;
+    text-align: center;
+
 }
 
  .background {
@@ -31,6 +40,8 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    background-image: url('flowers.jpg');
+    background-size: cover;
 }
 
 .fa {
@@ -65,5 +76,8 @@ img {
 
 .panel.fullstack {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: auto;
+    text-align: center;
 }
