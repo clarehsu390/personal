@@ -18,22 +18,23 @@ color: #FEDCD2;
 
 h2 {
     font-family: 'Quicksand', sans-serif;
-    color: white;
-    text-align: center;
+    color: #FEDCD2;
+    font-size: 48px;
 
 }
 
 h3 {
     font-family: 'Quicksand', sans-serif;
     color: white;
-    text-align: center;
+    font-size: 32px;
 
 }
 
 h4 {
     font-family: 'Quicksand', sans-serif;
     color: white;
-    text-align: center;
+    text-align: left;
+    width: 300px;
 
 }
 
@@ -51,7 +52,6 @@ h4 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
     height: 100%;
     width: 100%;
     background-image: url('flowers.jpg');
@@ -82,9 +82,21 @@ h4 {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+.left {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
@@ -98,14 +110,14 @@ img {
 
 #github {
     font-size: 60px;
-    color: white;
+    color: #DF744A;
 }
 
-span {
+.text {
     color: white;
     font-family: 'Quicksand', sans-serif;
-    width: 400px;
     text-align: center;
+    width: 300px;
 }
 
 #selfie {
